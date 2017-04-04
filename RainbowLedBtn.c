@@ -340,11 +340,11 @@ int main (int argc, char **argv)
 	ioctl(fd, JSIOCGAXES, &axes);
 	ioctl(fd, JSIOCGBUTTONS, &buttons);
 	ioctl(fd, JSIOCGNAME(NAME_LENGTH), name);
-
+	/*
 	printf("joystick (%s) has %d axes and %d buttons.\n",
 		name, axes, buttons );
 	printf("Testing ... (Ctrl+C to exit)\n");
-	
+	*/
 	
 	// Start led btn	
 	if (argc == 2 ) 
