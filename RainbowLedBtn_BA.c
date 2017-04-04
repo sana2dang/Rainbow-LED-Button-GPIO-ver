@@ -158,8 +158,8 @@ void funRainbowLed()
 		switch( chargeCnt )
 		{
 			case 0: 
-				digitalWrite(pin1r,0);
-				digitalWrite(pin1g,0);
+				digitalWrite(pin1r,1);
+				digitalWrite(pin1g,1);
 				digitalWrite(pin1b,1);				
 			break;
 			case 1:
