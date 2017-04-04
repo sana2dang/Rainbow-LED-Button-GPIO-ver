@@ -158,8 +158,8 @@ void funRainbowLed()
 		switch( chargeCnt )
 		{
 			case 0: 
-				digitalWrite(pin1r,0);
-				digitalWrite(pin1g,0);
+				digitalWrite(pin1r,1);
+				digitalWrite(pin1g,1);
 				digitalWrite(pin1b,1);				
 			break;
 			case 1:
@@ -321,17 +321,17 @@ int main (int argc, char **argv)
 	if (argc != 2) 
 	{
 		puts("");
-		puts("Usage: ledbtn <#joystick>");
+		puts("Usage: RainbowLedBtn <#joystick>");
 		puts("");
 		puts("pin number( GPIO ) : LED(6 12 13 16 19) RGB(20 21 26)");		
 		puts("");
-		puts("ex) ./ledbtn /dev/input/js0");
+		puts("ex) ./RainbowLedBtn /dev/input/js0");
 		puts("");
 		exit(1);
 	}
 	
 	if ((fd = open(argv[1], O_RDONLY)) < 0) {
-		perror("ledbtn");
+		perror("RainbowLedBtn");
 		exit(1);
 	}
 
@@ -490,6 +490,6 @@ int main (int argc, char **argv)
 		}
 	}
 
-	printf("ledbtn: unknown joystick: %s\n", argv[1]);
+	printf("RainbowLedBtn: unknown joystick: %s\n", argv[1]);
 	return -1;
 }
