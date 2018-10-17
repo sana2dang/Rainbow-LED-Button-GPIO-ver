@@ -8,7 +8,7 @@
  * - Reference -
  * wiringPi
  * http://wiringpi.com/the-gpio-utility/
- * apt-get install wiringpi
+ * apt-get install wiringPi
  * 
  * jstest
  * https://github.com/flosse/linuxconsole/blob/master/utils/jstest.c
